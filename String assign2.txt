@@ -1,0 +1,120 @@
+1.import java.util.Scanner;
+  
+  class UserInput
+  {
+    public static void main(String []args)
+    {
+      Scanner scan=new Scanner(System.in);
+      System.out.println("Enter the input");
+      String user=scan.next();
+      System.out.println(user);
+    }
+   } 
+
+2.We can concatinate two strings using '+' operator and String.concate() method.
+ 
+  EXAMPLE:
+  class Java
+  {
+    public static void main(String []args)
+    {
+      // USING concate METHOD 
+      String s1="pw java";
+      String s2=s1.concate("skill");
+      System.out.println(s2);
+
+      // USING + OPERATOR
+      String s1="pw";
+      String s2="pw" + "java";
+      System.out.println(s2);
+     }
+    }
+
+3.Using String.length() method
+  
+  class Java
+  {
+    public static void main(String []args)
+    {
+      String s1="pwjava";
+      System.out.println(s1.length());
+    }
+   }
+
+4.To compare two strings in java we use following approaches:
+  *.== operator; compares reference of object
+  *.equals(); it compares the contents of two objects
+ EXAMPLE
+ String s1="pwskills";
+ String s2=new String("pwskills");
+ System.out.println(s1==s2); //false
+ System.out.println(s1.equals(s2)); //true
+
+5. class Java
+  {
+    public static void main(String []args)
+    {
+      String s1="refrigerator";
+      System.out.println(s1.length());
+    }
+   }
+
+6. class Java
+  {
+    public static void main(String []args)
+    {
+      String s1="umberalla";
+      System.out.println(s1.indexOf("e"); // it gives index then e is present
+                                          // it gives -1 then e is not present
+    }
+   }
+
+7.
+  import java.util.Scanner;
+class delete
+
+{
+
+    public static void main(String args[])
+
+    {
+
+    String s;
+    int j=0;
+    System.out.println("Enter a string");
+    Scanner so=new Scanner(System.in);
+    s= so.nextLine();
+    char ch[]=new char[20];
+
+    for(int i=0;i<s.length();i++)
+
+    {
+
+    if(s.charAt(i)=='a'|| s.charAt(i)=='A'||s.charAt(i)=='e'|| s.charAt(i)=='E'||s.charAt(i)=='i'|| s.charAt(i)=='I'||s.charAt(i)=='o'|| s.charAt(i)=='O'||s.charAt(i)=='U'|| s.charAt(i)=='u')
+
+    {
+    ch[j++]=s.charAt(i);
+
+    
+    }
+
+        else
+    
+        {
+
+        continue;
+
+        }
+
+    }
+    for(int i=0;i<j;i++)
+    {
+    System.out.print(ch[i]);
+    }
+    System.out.println();
+}
+
+}
+
+ 
+   
